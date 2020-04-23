@@ -82,7 +82,8 @@ def checkInput args
     args.state.myCamera.moveLeft
   elsif args.inputs.keyboard.key_held.right || args.inputs.keyboard.key_held.d
     args.state.myCamera.moveRight
-  elsif args.inputs.keyboard.key_held.down || args.inputs.keyboard.key_held.s
+  end
+  if args.inputs.keyboard.key_held.down || args.inputs.keyboard.key_held.s
     args.state.myCamera.moveDown
   elsif args.inputs.keyboard.key_held.up || args.inputs.keyboard.key_held.w
     args.state.myCamera.moveUp
